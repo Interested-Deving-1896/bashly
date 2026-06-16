@@ -1,81 +1,75 @@
-<div align='center'>
-<img src='support/img/bashly-logo.svg' width=280>
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# bashly
 
-# Bashly - Bash CLI Framework and Generator
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/bashly)
 
-Create feature-rich bash scripts using simple YAML configuration
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## [bashly.dev](https://bashly.dev)
+## Architecture
 
----
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-![demo](support/demo/cast.gif)
+## Install
 
-</div>
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-![repocard](https://repocard.dannyben.com/svg/bashly.svg)
+```bash
+git clone https://github.com/Interested-Deving-1896/bashly.git
+cd bashly
+```
 
-Bashly is a command line application (written in Ruby) that lets you
-generate feature-rich bash command line tools.
+## Usage
 
-Bashly lets you focus on your specific code, without worrying about command line
-argument parsing, usage texts, error messages and other functions that are
-usually handled by a framework in any other programming language.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-It is available both as a [ruby gem](https://rubygems.org/gems/bashly) and as
-a [docker image](https://hub.docker.com/r/dannyben/bashly).
+## Configuration
 
-## Documentation
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-- [Bashly Homepage][docs]
-- [Examples][examples]
-- [Bashly AI Assistant][gpt]
+## CI
 
-## How it works
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-1. You provide a YAML configuration file, describing commands, sub-commands,
-   arguments, and flags. Running `bashly init` creates an initial sample YAML
-   file for you ([example](https://github.com/bashly-framework/bashly/tree/master/examples/minimal#bashlyyml)).
-2. Bashly then automatically generates a bash script (when you run
-   `bashly generate`) that can parse and validate user input, provide help
-   messages, and run your code for each command.
-3. Your code for each command is kept in a separate file, and can be merged
-   again if you change it ([example](https://github.com/bashly-framework/bashly/blob/master/examples/minimal/src/root_command.sh)).
+## Mirror chain
 
-## Features
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/bashly`](https://github.com/Interested-Deving-1896/bashly) and mirrored through:
 
-Bashly is responsible for:
+```
+Interested-Deving-1896/bashly  ──►  OpenOS-Project-OSP/bashly  ──►  OpenOS-Project-Ecosystem-OOC/bashly
+```
 
-- Generating a **single, standalone bash script**.
-- Generating a **human readable, shellcheck-compliant and shfmt-compliant script**.
-- Generating **usage texts** and help screens, showing your tool's arguments, flags and commands (works for sub-commands also).
-- Parsing the user's command line and extracting:
-  - Optional or required **positional arguments**.
-  - Optional or required **option flags** (with or without flag arguments).
-  - **Commands** (and sub-commands).
-  - Standard flags (like **--help** and **--version**).
-- Preventing your script from running unless the command line is valid.
-- Providing you with a place to input your code for each of the functions your tool performs, and merging it back to the final script.
-- Providing you with additional (optional) framework-style, standard library functions:
-  - **Color output**.
-  - **Config file management** (INI format).
-  - **YAML parsing**.
-  - **Bash completions**.
-  - *and more*.
-- Auto-generating **markdown and man page documentation** for your script.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## Contributing / Support
+## Contributors
 
-If you experience any issue, have a question or a suggestion, or if you wish
-to contribute, feel free to [open an issue][issues] or
-[start a discussion][discussions].
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-Visit the *[How to contribute][contributing]* page for more information.
+## Origins
 
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
 
-[issues]: https://github.com/bashly-framework/bashly/issues
-[discussions]: https://github.com/bashly-framework/bashly/discussions
-[docs]: https://bashly.dev/
-[gpt]: https://bashly.dev/chat
-[examples]: https://github.com/bashly-framework/bashly/tree/master/examples#bashly-examples
-[contributing]: https://github.com/bashly-framework/bashly/blob/master/CONTRIBUTING.md#how-to-contribute
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/bashly/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
